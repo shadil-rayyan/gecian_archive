@@ -68,8 +68,8 @@ const Gallery = () => {
   };
 
   return (
-    <div className="pt-10 mb-10 px-4 overflow-hidden relative">
-      <h2 className="text-center md:text-[40px] text-[30px] font-bold mb-6">
+    <div className="pt-10 mb-10 px-4 overflow-hidden relative bg-[#27272A]">
+      <h2 className="text-center md:text-[40px] text-[30px] font-bold mb-6 text-white">
         GALLERY
       </h2>
 
@@ -141,7 +141,7 @@ const Gallery = () => {
               onClick={() => setCurrentIndex(i)}
               className={`cursor-pointer transition-all w-2 h-2 rounded-full ${
                 currentIndex === i
-                  ? "bg-[#EC994b] p-2"
+                  ? "bg-white p-2"
                   : "bg-gray-500 bg-opacity-50"
               }`}
             />
