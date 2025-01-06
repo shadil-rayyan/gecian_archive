@@ -71,7 +71,7 @@ const Navbar = () => {
         </div>
 
         <button>
-          <div className="w-[117px] h-[45px] bg-[#000000] rounded-3xl text-white font-davidLibre flex justify-center items-center text-[15.5px] hover:bg-[#21130b] drop-shadow-lg">
+          <div className="w-[117px] h-[45px] bg-[#000000] rounded-3xl text-white font-davidLibre flex justify-center items-center text-[15.5px] hover:bg-white drop-shadow-lg hover:text-black">
             Repeto
           </div>
         </button>

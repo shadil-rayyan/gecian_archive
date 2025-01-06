@@ -13,7 +13,7 @@ const Intro = () => {
           will help you gain all these information at your fingertip.
         </p>
         <button>
-          <div className="w-[157px] h-[45px]  bg-[#ffffff] mt-20 rounded-xl text-black font-davidLibre flex justify-center items-center text-[18.5px] hover:bg-[#f0d9cb]  drop-shadow-lg">
+          <div className="w-[157px] h-[45px]  bg-[#ffffff] mt-20 rounded-xl text-black font-davidLibre flex justify-center items-center text-[18.5px] hover:text-white hover:bg-black  drop-shadow-lg">
             Repeto
           </div>
         </button>

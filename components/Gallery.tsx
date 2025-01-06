@@ -68,8 +68,8 @@ const Gallery = () => {
   };
 
   return (
-    <div className="pt-10 mb-10 px-4 overflow-hidden relative bg-[#27272A]">
-      <h2 className="text-center md:text-[40px] text-[30px] font-bold mb-6 text-white">
+    <div className="pt-10  px-4 overflow-hidden relative bg-[#27272A]">
+      <h2 className="text-center md:text-[48px] text-[30px] font-bold mb-6 text-white">
         GALLERY
       </h2>
 

@@ -19,7 +19,7 @@ const Newsletter = () => {
           />
           <button
             aria-label="Sign up for the newsletter"
-            className="w-[107px] h-[45px] bg-[#ffffff] rounded-2xl text-black font-davidLibre flex justify-center items-center text-[18.5px] hover:bg-[#f0d9cb] drop-shadow-lg"
+            className="w-[107px] h-[45px] bg-[#ffffff] rounded-2xl text-black font-davidLibre flex justify-center items-center text-[18.5px] hover:text-white hover:bg-black drop-shadow-lg"
           >
             Sign Up
           </button>

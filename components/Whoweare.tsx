@@ -22,12 +22,12 @@ const Whoweare = () => {
           <li>Find online hackathons and open source projects </li>
         </ul>
         <button >
-          <div className="w-[137px] h-[45px] bg-[#ffffff] mt-10 rounded-2xl text-black font-davidLibre flex justify-center items-center text-[18.5px] hover:bg-[#f0d9cb]  drop-shadow-lg">
+          <div className="w-[137px] h-[45px] bg-[#ffffff] mt-10 rounded-2xl text-black font-davidLibre flex justify-center items-center text-[18.5px] hover:text-white hover:bg-black  drop-shadow-lg">
             About us
           </div>
         </button>
       </div>
-      <div className="bg-red-800 w-full z-20">
+      <div className="w-full z-20"> {/*Place the Image in this div*/}
         <img src=""
         alt="img"/>
       </div>
