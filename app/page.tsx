@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
 import Navbar from "@/components/Navbar";
 import Newsletter from "@/components/Newsletter";
+import StudentReviews from "@/components/StudentReviews";
 import Whoweare from "@/components/Whoweare";
 import Image from "next/image";
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Newsletter/>
       <Calendar/>
       <Gallery/>
+      <StudentReviews/>
       <Contact/>
       <Footer/>
     </>

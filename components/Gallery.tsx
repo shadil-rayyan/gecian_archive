@@ -8,31 +8,11 @@ const Gallery = () => {
   const [direction, setDirection] = useState(0);
 
   const Imgs = [
-    {
-      id: 1,
-
-      img: "/images/cake.jpeg",
-    },
-    {
-      id: 2,
-
-      img: "/images/pancake.jpeg",
-    },
-    {
-      id: 3,
-
-      img: "/images/pizza.jpeg",
-    },
-    {
-      id: 4,
-
-      img: "/images/meatball.jpeg",
-    },
-    {
-      id: 5,
-
-      img: "/images/burger.jpeg",
-    },
+    { id: 1, img: "/images/cake.jpeg" },
+    { id: 2, img: "/images/pancake.jpeg" },
+    { id: 3, img: "/images/pizza.jpeg" },
+    { id: 4, img: "/images/meatball.jpeg" },
+    { id: 5, img: "/images/burger.jpeg" },
   ];
 
   const nextSlide = () => {
@@ -49,16 +29,13 @@ const Gallery = () => {
     const items = [];
     const totalItems = Imgs.length;
 
-    // Add previous 2 items
     for (let i = 2; i > 0; i--) {
       const index = (currentIndex - i + totalItems) % totalItems;
       items.push({ ...Imgs[index], position: -i });
     }
 
-    // Add current item
     items.push({ ...Imgs[currentIndex], position: 0 });
 
-    // Add next 2 items
     for (let i = 1; i <= 2; i++) {
       const index = (currentIndex + i) % totalItems;
       items.push({ ...Imgs[index], position: i });
@@ -68,22 +45,18 @@ const Gallery = () => {
   };
 
   return (
-    <div className="pt-10  px-4 overflow-hidden relative bg-[#27272A]">
-      <h2 className="text-center md:text-[48px] text-[30px] font-bold mb-6 text-white">
+    <div className="pt-10 px-4 overflow-hidden relative bg-[#27272A]">
+      <h2 className="text-center text-white font-bold mb-6 text-[35px] md:text-[40px]">
         GALLERY
       </h2>
 
-      <div className="relative h-[500px] max-w-6xl mx-auto">
+      <div className="relative h-[300px] md:h-[500px] max-w-6xl mx-auto z-30">
         <div className="relative h-full flex items-center justify-center">
           {getVisibleItems().map((item) => {
             const position = item.position;
-
-            // Enhanced progressive scaling
             let zIndex = 5 - Math.abs(position);
-
             let opacity, scale, translateX;
 
-            // Adjust scaling and positioning based on distance from center
             if (Math.abs(position) === 0) {
               opacity = 1;
               scale = 1;
@@ -101,7 +74,7 @@ const Gallery = () => {
             return (
               <div
                 key={item.id}
-                className="absolute  transition-all ease-in-out duration-500 md:w-[500px]"
+                className="absolute transition-all duration-500 ease-in-out md:w-[400px] w-[250px]"
                 style={{
                   transform: `translateX(${translateX}) scale(${scale})`,
                   zIndex: zIndex,
@@ -111,8 +84,7 @@ const Gallery = () => {
                 <div className="relative rounded-lg overflow-hidden shadow-lg">
                   <img
                     src={item.img}
-                   
-                    className="h-[400px] w-full object-cover"
+                    className="h-[200px] md:h-[400px] w-full object-contain"
                   />
                 </div>
               </div>
@@ -122,26 +94,27 @@ const Gallery = () => {
 
         <button
           onClick={prevSlide}
-          className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-lg z-30 hover:bg-white transition-colors"
+          className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-lg z-30 hover:bg-white transition-colors"
         >
           <ChevronLeft className="w-6 h-6" />
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-lg z-30 hover:bg-white transition-colors"
+          className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-lg z-30 hover:bg-white transition-colors"
         >
           <ChevronRight className="w-6 h-6" />
         </button>
       </div>
-      <div className="absolute bottom-4 right-0 left-0 z-40">
+
+      <div className="absolute bottom-4 left-0 right-0 z-40">
         <div className="flex items-center justify-center gap-2">
           {Imgs.map((_, i) => (
             <div
               key={i}
               onClick={() => setCurrentIndex(i)}
-              className={`cursor-pointer transition-all w-2 h-2 rounded-full ${
+              className={`cursor-pointer transition-all w-2 h-2 md:w-3 md:h-3 rounded-full ${
                 currentIndex === i
-                  ? "bg-white p-2"
+                  ? "bg-white p-1 md:p-2"
                   : "bg-gray-500 bg-opacity-50"
               }`}
             />

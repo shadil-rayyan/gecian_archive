@@ -2,38 +2,46 @@ import React from "react";
 
 const Newsletter = () => {
   return (
-    <div className="bg-[#27272A] h-auto sm:h-[450px] flex flex-col sm:flex-row p-2 gap-28 items-center justify-center flex-1">
-      <div className="flex flex-col gap-8 w-1/2">
-        <p className="text-white font-bold text-[48px]">NEWSLETTER</p>
-        <p className="text-white text-[22px]">
+    <div className="bg-zinc-800 min-h-[450px] flex flex-col lg:flex-row p-4 md:p-8 gap-8 lg:gap-16 items-center justify-between py-20">
+      {/* Text Content Section */}
+      <div className="flex flex-col gap-6 w-full lg:w-1/2 max-w-2xl z-30">
+        <h2 className="text-white font-bold   lg:text-[40px] text-[35px] text-center lg:text-left text-shadow-xl">
+          NEWSLETTER
+        </h2>
+        <p className="text-white md:text-[22px] text-[20px] text-center lg:text-left">
           Do you want to stay updated about internships, hackathons,
           fellowships, and scholarship news during your college days? Sign up
           for our newsletter to get all these updates at your fingertips.
         </p>
-        <div className="flex gap-4 flex-wrap">
+        <div className="flex flex-col sm:flex-row items-center gap-8 w-full">
           <input
             type="email"
             placeholder="Enter your email"
             aria-label="Email Address"
-            className="p-2 w-full sm:w-[320px] h-[45px] rounded-xl bg-transparent border-white border text-white"
+            className="p-3  sm:w-[320px] h-[45px] w-[300px] rounded-xl bg-transparent border-white border text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white"
           />
           <button
             aria-label="Sign up for the newsletter"
-            className="w-[107px] h-[45px] bg-[#ffffff] rounded-2xl text-black font-davidLibre flex justify-center items-center text-[18.5px] hover:text-white hover:bg-black drop-shadow-lg"
+            className=" w-[137px] h-[45px] bg-white rounded-2xl text-black font-medium text-lg hover:text-white hover:bg-black transition-colors duration-300 drop-shadow-lg"
           >
             Sign Up
           </button>
         </div>
-        <p className="text-gray-500">
+        <p className="text-gray-400 text-sm md:text-base text-center lg:text-left md:ml-0 ml-16  w-[320px]">
           By clicking Sign Up you're confirming that you agree with our{" "}
-          <a href="/" className="underline">Terms and Conditions</a>.
+          <a href="/" className="underline hover:text-gray-300">
+            Terms and Conditions
+          </a>
+          .
         </p>
       </div>
-      <div className="w-[500px] h-[400px] flex justify-center mt-8 sm:mt-0">
+
+      {/* Image Section */}
+      <div className="w-full lg:w-[500px] h-[300px] md:h-[400px] md:flex justify-center items-center hidden">
         <img
           src="/Mailimg.png"
           alt="Newsletter Illustration"
-          className="object-cover object-center max-w-full"
+          className="object-contain w-full h-full max-w-[400px] lg:max-w-[500px]"
         />
       </div>
     </div>

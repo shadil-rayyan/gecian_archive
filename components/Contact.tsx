@@ -2,12 +2,12 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="bg-[#27272A] h-[400px] py-16">
+    <div className="bg-[#27272A] md:h-[400px] py-16">
       <div className="text-center md:text-[48px] text-[30px] font-bold mb-6 text-white">
         CONTACT
       </div>
-      <div className="  flex flex-row flex-1">
-        <div className=" w-full flex py-8 flex-col justify-center items-center">
+      <div className="  flex flex-col md:flex-row flex-1">
+        <div className=" w-full flex py-6 flex-col justify-center items-center">
           <div>
             <svg
               className="w-12 h-12 text-white"
@@ -27,7 +27,7 @@ const Contact = () => {
           </div>
           <p className="text-gray-300 underline">shadilrayyan2@gmail.com</p>
         </div>
-        <div className=" w-full flex flex-col justify-center items-center">
+        <div className=" w-full flex flex-col justify-center items-center py-6">
           <div>
             <svg
               className="w-12 h-12 text-white"
@@ -46,7 +46,7 @@ const Contact = () => {
           </div>
           <p className="text-gray-300 ">+91 99569 5010</p>
         </div>
-        <div className=" w-full flex flex-col justify-center items-center">
+        <div className=" w-full flex flex-col justify-center items-center py-6">
           <svg
             className="w-12 h-12 text-gray-800 dark:text-white"
             aria-hidden="true"
