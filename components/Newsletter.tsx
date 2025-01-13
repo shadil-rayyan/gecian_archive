@@ -8,7 +8,7 @@ const Newsletter = () => {
         <h2 className="text-white font-bold   lg:text-[40px] text-[35px] text-center lg:text-left text-shadow-xl">
           NEWSLETTER
         </h2>
-        <p className="text-white md:text-[22px] text-[20px] text-center lg:text-left">
+        <p className="text-white md:text-[24px] text-[20px] text-center lg:text-left">
           Do you want to stay updated about internships, hackathons,
           fellowships, and scholarship news during your college days? Sign up
           for our newsletter to get all these updates at your fingertips.

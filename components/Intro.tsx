@@ -2,18 +2,18 @@ import React from "react";
 
 const Intro = () => {
   return (
-    <div className=" relative flex flex-col md:flex-row md:h-[450px]  bg-[#27272A] md:overflow-hidden">
-      <div className=" w-full flex justify-center md:justify-start items-center md:p-36 ">
-        <p className=" text-white  md:text-[50px] md:w-[40px] text-[35px] z-30  font-bold ">INTRODUCING REPETO</p> 
+    <div className=" relative flex flex-col lg:flex-row md:h-[450px]  bg-[#27272A] lg:overflow-hidden ">
+      <div className=" w-full flex justify-center lg:justify-start items-center lg:p-36 md:p-10">
+        <p className=" text-white  lg:text-[50px] lg:w-[40px] md:text-[45px] text-[35px] z-30  font-bold ">INTRODUCING REPETO</p> 
       </div>
-      <div className=" md:w-full text-center flex flex-col justify-center items-center">
-        <p className="text-white md:text-[22px] text-[20px] text-center md:text-left p-10 md:pt-24 z-30 text-shadow-xl">
+      <div className=" lg:w-full text-center flex flex-col justify-center items-center">
+        <p className="text-white md:text-[24px] text-[20px] text-center lg:text-left p-10 lg:pt-24 z-30 text-shadow-xl">
           We all know that many events repeat every year like that Scholarship,
           Internship, Hackathon also happen.So we are Introducing Repeto that
           will help you gain all these information at your fingertip.
         </p>
         <button className="z-30">
-          <div className="w-[137px] h-[45px]  bg-[#ffffff] md:mt-12 rounded-xl text-black font-davidLibre flex justify-center items-center text-[18.5px] hover:text-white hover:bg-black font-medium drop-shadow-lg">
+          <div className="w-[137px] h-[45px]  bg-[#ffffff] lg:mt-12 rounded-xl text-black font-davidLibre flex justify-center items-center text-[18.5px] hover:text-white hover:bg-black font-medium drop-shadow-lg">
             Repeto
           </div>
         </button>
