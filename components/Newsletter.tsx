@@ -4,8 +4,8 @@ const Newsletter = () => {
   return (
     <div className="bg-zinc-800 min-h-[450px] flex flex-col lg:flex-row p-4 md:p-8 gap-8 lg:gap-16 items-center justify-between py-20">
       {/* Text Content Section */}
-      <div className="flex flex-col gap-6 w-full lg:w-1/2 max-w-2xl z-30">
-        <h2 className="text-white font-bold   lg:text-[40px] text-[35px] text-center lg:text-left text-shadow-xl">
+      <div className="flex flex-col gap-6 w-full lg:w-1/2 max-w-2xl lg:items-start items-center z-30">
+        <h2 className="text-white font-bold   lg:text-[50px] md:text-[45px] text-[35px] text-center lg:text-left text-shadow-xl">
           NEWSLETTER
         </h2>
         <p className="text-white md:text-[24px] text-[20px] text-center lg:text-left">
@@ -13,7 +13,7 @@ const Newsletter = () => {
           fellowships, and scholarship news during your college days? Sign up
           for our newsletter to get all these updates at your fingertips.
         </p>
-        <div className="flex flex-col sm:flex-row items-center gap-8 w-full">
+        <div className="flex flex-col lg:flex-row items-center gap-8 w-full">
           <input
             type="email"
             placeholder="Enter your email"
@@ -27,7 +27,7 @@ const Newsletter = () => {
             Sign Up
           </button>
         </div>
-        <p className="text-gray-400 text-sm md:text-base text-center lg:text-left md:ml-0 ml-16  w-[320px]">
+        <p className="text-gray-400 text-sm md:text-base text-center lg:text-left lg:ml-0   w-[320px]">
           By clicking Sign Up you're confirming that you agree with our{" "}
           <a href="/" className="underline hover:text-gray-300">
             Terms and Conditions
@@ -37,7 +37,7 @@ const Newsletter = () => {
       </div>
 
       {/* Image Section */}
-      <div className="w-full lg:w-[500px] h-[300px] md:h-[400px] md:flex justify-center items-center hidden">
+      <div className="w-full lg:w-[500px] h-[300px] md:h-[400px] lg:flex justify-center items-center hidden">
         <img
           src="/Mailimg.png"
           alt="Newsletter Illustration"
