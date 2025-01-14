@@ -4,7 +4,7 @@ const Intro = () => {
   return (
     <div className=" relative flex flex-col lg:flex-row md:h-[450px]  bg-[#27272A] lg:overflow-hidden ">
       <div className=" w-full flex justify-center lg:justify-start items-center lg:p-36 md:p-10">
-        <p className=" text-white  lg:text-[50px] lg:w-[40px] md:text-[45px] text-[35px] z-30  font-bold ">INTRODUCING REPETO</p> 
+        <p className=" text-white  lg:text-[50px] lg:w-[45px] md:text-[40px] text-[35px] z-30  font-bold ">INTRODUCING REPETO</p> 
       </div>
       <div className=" lg:w-full text-center flex flex-col justify-center items-center">
         <p className="text-white md:text-[24px] text-[20px] text-center lg:text-left p-10 lg:pt-24 z-30 text-shadow-xl">

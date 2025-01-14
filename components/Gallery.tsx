@@ -46,7 +46,7 @@ const Gallery = () => {
 
   return (
     <div className="pt-10 px-4 overflow-hidden relative bg-[#27272A]">
-      <h2 className="text-center text-white font-bold mb-6 text-[35px] md:text-[40px]">
+      <h2 className="text-center text-white font-bold mb-6 text-[35px] md:text-[40px] lg:text-[45px]">
         GALLERY
       </h2>
 

@@ -43,51 +43,36 @@ const StudentReviews = () => {
   };
 
   return (
-    <div className="relative bg-[#27272A] w-full py-8 md:py-16 lg:px-0 px-20">
-      <div className="lg:block hidden relative top-[60px]  -translate-x-48">
-        <div className="w-[400px] h-[400px] bg-gradient-to-t to-[#2CB1CF] from-[#1D7589] shadow-2xl shadow-black absolute"></div>
-        <div className="w-[350px] h-[350px] bg-gradient-to-t to-[#2CB1CF] from-[#1D7589] shadow-2xl absolute shadow-black  top-[25px] left-[25px]"></div>
-        <div className="w-[300px] h-[300px] bg-gradient-to-t to-[#2CB1CF] from-[#1D7589] shadow-2xl shadow-black absolute top-[50px] left-[50px]"></div>
-      </div>
-      <div className="  relative top-[60px] left-1/2 -translate-x-48">
-        <div className="w-[400px] h-[400px] bg-gradient-to-t to-[#2CB1CF] from-[#1D7589] shadow-2xl shadow-black absolute"></div>
-        <div className="w-[350px] h-[350px] bg-gradient-to-t to-[#2CB1CF] from-[#1D7589] shadow-2xl absolute shadow-black  top-[25px] left-[25px]"></div>
-        <div className="w-[300px] h-[300px] bg-gradient-to-t to-[#2CB1CF] from-[#1D7589] shadow-2xl shadow-black absolute top-[50px] left-[50px]"></div>
-      </div>
-      <div className="relative top-[60px] translate-x-[85%] lg:block hidden">
-        <div className="w-[400px] h-[400px] bg-gradient-to-t to-[#2CB1CF] from-[#1D7589] shadow-2xl shadow-black absolute"></div>
-        <div className="w-[350px] h-[350px] bg-gradient-to-t to-[#2CB1CF] from-[#1D7589] shadow-2xl absolute shadow-black  top-[25px] left-[25px]"></div>
-        <div className="w-[300px] h-[300px] bg-gradient-to-t to-[#2CB1CF] from-[#1D7589] shadow-2xl shadow-black absolute top-[50px] left-[50px]"></div>
-      </div>
+    < div className="relative bg-[#27272A] w-full py-8 md:py-8">
+      {/* Decorative elements with responsive positioning */}
+      
+      
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center">
+        <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-8 md:mb-12 pb-12 text-center ">
           WHAT STUDENTS HAVE TO SAY ABOUT US
         </h2>
 
-        <div className="relative flex flex-col items-center">
+        <div className="relative">
           {/* Navigation buttons */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-8  lg:-translate-x-12 bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-12 bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors"
           >
             <ChevronLeft className="w-4 h-4 md:w-6 md:h-6 text-white" />
           </button>
 
           {/* Responsive grid/slider */}
-          <div className="flex justify-center items-center mt-14 md:mt-8 lg:mt-4 gap-4 md:gap-8 overflow-hidden text-shadow-xl">
+          <div className="flex justify-center items-center gap-4 md:gap-8 overflow-hidden text-shadow-xl px-24 ">
             {[-1, 0, 1].map((offset) => {
               const index =
                 (currentIndex + offset + reviews.length) % reviews.length;
               const review = reviews[index];
               const isActive = offset === 0;
-
               return (
                 <div
                   key={review.id}
-                  className={`bg-transparent border-2 border-gray-200 p-6 md:p-8 rounded-lg transition-all duration-300  ${
-                    isActive
-                      ? " opacity-100"
-                      : "scale-90 opacity-50"
+                  className={`bg-transparent border-2 border-gray-200 p-6 md:p-8 rounded-lg transition-all duration-300 lg:w-full  ${
+                    isActive ? " opacity-100" : "scale-90 opacity-50"
                   } ${
                     Math.abs(offset) === 1
                       ? "hidden lg:block"
@@ -97,13 +82,15 @@ const StudentReviews = () => {
                   <p className="text-white mb-4 md:mb-6 text-[16px] leading-relaxed">
                     "{review.text}"
                   </p>
-                  <div className="flex flex-col items-center gap-2">
-                    <h3 className="text-white font-medium text-sm md:text-[17px]">
-                      {review.name}
-                    </h3>
-                    <p className="text-gray-400 text-xs md:text-sm">
-                      {review.course}
-                    </p>
+                  <div className="flex items-center gap-3 md:gap-4">
+                    <div>
+                      <h3 className="text-white font-medium text-sm md:text-[17px]">
+                        {review.name}
+                      </h3>
+                      <p className="text-gray-400 text-xs md:text-sm">
+                        {review.course}
+                      </p>
+                    </div>
                   </div>
                 </div>
               );
@@ -112,7 +99,7 @@ const StudentReviews = () => {
 
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-8 lg:translate-x-12 bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 lg:translate-x-12 bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors"
           >
             <ChevronRight className="w-4 h-4 md:w-6 md:h-6 text-white" />
           </button>

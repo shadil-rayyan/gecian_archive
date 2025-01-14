@@ -5,7 +5,7 @@ const Newsletter = () => {
     <div className="bg-zinc-800 min-h-[450px] flex flex-col lg:flex-row p-4 md:p-8 gap-8 lg:gap-16 items-center justify-between py-20">
       {/* Text Content Section */}
       <div className="flex flex-col gap-6 w-full lg:w-1/2 max-w-2xl lg:items-start items-center z-30">
-        <h2 className="text-white font-bold   lg:text-[50px] md:text-[45px] text-[35px] text-center lg:text-left text-shadow-xl">
+        <h2 className="text-white font-bold   lg:text-[45px] md:text-[40px] text-[35px] text-center lg:text-left text-shadow-xl">
           NEWSLETTER
         </h2>
         <p className="text-white md:text-[24px] text-[20px] text-center lg:text-left">

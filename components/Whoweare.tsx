@@ -10,7 +10,7 @@ const Whoweare = () => {
         <img src="AI.jpeg" className="rounded-3xl hover:scale-105 transition-all duration-300 ease-in-out" alt="img" />
       </div>
       <div className=" w-full lg:p-20  md:p-10 text-center text-white z-30">
-        <h1 className="  md:pb-10 pb-6 text-[35px] md:text-[45px] lg:text-[50px] font-bold text-shadow-xl">
+        <h1 className="  md:pb-10 pb-6 text-[35px] md:text-[40px] lg:text-[45px] font-bold text-shadow-xl">
           WHO WE ARE
         </h1>
         <p className="text-left text-[20px] md:text-[24px] text-shadow-xl">

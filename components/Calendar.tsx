@@ -11,7 +11,7 @@ const Calendar = () => {
         />
       </div>
       <div className="flex flex-col gap-8 lg:w-1/2 z-50 lg:pl-20 p-4 lg:text-left text-center items-center lg:items-start">
-        <p className="text-white font-bold lg:text-[50px] md:text-[45px] text-[35px] lg:text-left text-shadow-xl">CALENDAR</p>
+        <p className="text-white font-bold lg:text-[45px] md:text-[40px] text-[35px] lg:text-left text-shadow-xl">CALENDAR</p>
         <p className="text-white md:text-[24px] text-[20px] text-shadow-xl ">
           Want to know all the internship,hackathons,Scholarship opprountiy in
           you calender yourself then click below and redirect to our caledner
