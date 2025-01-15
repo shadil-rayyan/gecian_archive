@@ -5,7 +5,7 @@ const Whoweare = () => {
   return (
     <div className="bg-[#27272A] w-full h-auto md:p-20 p-14 flex flex-col md:flex-row relative overflow-x-clip  gap-8">
       <div className="w-full md:hidden z-20 ">
-        {" "}
+        
         {/*Place the Image in this div*/}
         <img src="AI.jpeg" className="rounded-3xl hover:scale-105 transition-all duration-300 ease-in-out" alt="img" />
       </div>
@@ -39,8 +39,8 @@ const Whoweare = () => {
         {/*Place the Image in this div*/}
         <img src="AI.jpeg" className="rounded-3xl hover:scale-105 transition-all duration-300 ease-in-out" alt="img" />
       </div>
-      <div className="md:w-[260px] md:h-[260px] w-[150.12px] h-[150.12px] bg-gradient-to-t to-[#2CB1CF] from-[#1D7589] shadow-2xl shadow-black z-20 absolute md:top-[111.85px] bottom-[250px]  md:left-[120px] right-[170px] transform rounded-xl"></div>
-      <div className="md:w-[135px] md:h-[135px] w-[70.12px] h-[70.12px] bg-gradient-to-t to-[#2CB1CF] from-[#1D7589] shadow-2xl shadow-black absolute md:top-[351.85px] bottom-[390px]  md:left-[360px] z-10 left-[100px] transform rounded-xl"></div>
+      <div className="md:w-[260px] md:h-[260px] w-[150.12px] h-[150.12px] bg-gradient-to-t to-[#2CB1CF] from-[#1D7589]  z-20 absolute md:top-[111.85px] bottom-[250px]  md:left-[120px] right-[170px] transform rounded-xl"></div>
+      <div className="md:w-[135px] md:h-[135px] w-[70.12px] h-[70.12px] bg-gradient-to-t to-[#2CB1CF] from-[#1D7589]  absolute md:top-[351.85px] bottom-[390px]  md:left-[360px] z-10 left-[100px] transform rounded-xl"></div>
       <div className="lg:block hidden md:w-[260px] md:h-[260px]  bg-gradient-to-t to-[#2CB1CF] from-[#1D7589] shadow-2xl shadow-black z-20 absolute md:top-[761.85px] bottom-[100px]  md:left-[910px] left-[120px] transform rounded-xl"></div>
       <div className="lg:block hidden md:w-[135px] md:h-[135px]  bg-gradient-to-t to-[#2CB1CF] from-[#1D7589] shadow-2xl shadow-black absolute md:top-[651.85px] bottom-[100px]  md:left-[800px] z-10 left-[120px] transform rounded-xl"></div>
     </div>
