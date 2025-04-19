@@ -1,4 +1,4 @@
-# GecianArchive
+# Project Archive
 
 GecianArchive is a static website designed for students at **GEC Sreekrishnapuram** to showcase their projects. This platform provides students with visibility, helps them secure internships, and allows recruiters to assess their potential.
 
